@@ -1,4 +1,4 @@
-# Jeden svět Tišnov 2017 - další pokus
+
 
 ### Cílovou skupinu či skupiny (buďte konkrétní — „kdokoli“ a podobné definice jsou nepřípustné)
   - Vzhledem k tomu, že Jeden svět Tišnov je hlavně regionální záležitost s celorepublikovým přesahem, tak v prvé řadě cílíme na regionální kulturně zaměřené publikum 15–70 let. Jeden svět je festival dokumentů zaměřený na lidská práva, z čehož plyne i zaměření webu, který má za cíl představit festival publiku, které má zájem o film, aktuální dění, lidská práva.
