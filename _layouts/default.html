@@ -1,24 +1,667 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 7 ]>    <html lang="cs" class="ie7 no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="cs" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="cs" class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang = "cs" class = "no-js"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<title>{{ site.title }}</title>
-	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css">
-	
+<meta charset="utf-8" />
+<style type="text/css">
+.wrapper-footer {
+    background-color: #FFF;
+    border-top: 0.5px solid #989898;
+    margin-top:20px;
+  
+}
+footer {
+    padding: 5px 10px 33px 10px;
+    text-align: center;
+    font-family: Danzza,sans-serif;
+        font-size: 12px;
+        position: relative;
+}  
+    
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+    padding-bottom: 40px;
+    padding-top: 0px;
+    width: 100%;
+    
+    
+}    
+    
+audio, canvas, video {
+    display: inline-block;
+}
+b, strong {
+    font-weight: 700;
+}
+mark {
+    background: #ff0 none repeat scroll 0 0;
+    color: #000;
+}
+ menu, ol, ul {
+    margin: 1em 0;
+}
+menu, ol, ul {
+    padding: 0 0 0 40px;
+}
+nav ol, nav ul {
+    list-style: outside none none;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+embed, iframe, img, object {
+    vertical-align: middle;
+}
+.reset > li {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+body {
+    font: 400 16px/24px "Source Sans Pro",Arial,Helvetica,sans-serif;
+}
+caption, h1, h2, h3, h4, h5, h6 {
+    font-family: Danzza,sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 1.5em 0 0.75em;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.25em;
+    text-align: center;
+}
+    
+@media (min-width: 700px) {
+h1 {
+    font-size: 50px;
+}
+}
+h2 {
+    font-size: 20px;
+}
+caption, h3 {
+    font-size: 16px;
+}
+h4, h5, h6 {
+    font-size: 14px;
+}
+p {
+    margin: 0 0 1.75em;
+}
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #ddd -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    height: 1px;
+    margin: 40px 0;
+    overflow: hidden;
+}
+a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s ease 0s;
+}
+a:hover {
+    color: #898989;
+}
+ol, ul {
+    list-style: outside none none;
+    margin: 0 0 1.75em;
+    padding: 0;
+}
+li ol, li ul {
+    margin: 0.25em 0 0;
+}
+.row, .row-main {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.row-main::after, .row-main::before, .row::after, .row::before {
+    clear: both;
+    content: "";
+    display: table;
+}
+.row-main {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+@media (min-width: 700px) {
+.col {
+    display: inline;
+    float: left;
+    left: 100%;
+    padding: 0;
+    position: relative;
+}
+}
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    color: #000;
+    position: relative;
+    }
+#header .bg {
+      background: url('http://d1lfunetf0rx3e.cloudfront.net/production%2F1493585962685-7h5hrdg9mwk-14132c81bb5893047fcfea2864013514');
+    border-bottom: 1px solid #dedede;
+    height: 259px;
+    width: 800px;
+    overflow: hidden;
+    position: relative;
+    transform: translateZ(-1px);
+    visibility: visible;
+}
+#logo {
+    font: 400 100%/1 "Source Sans Pro",Arial,Helvetica,sans-serif;
+    margin-top: 22px;
+    margin-bottom: 10px;
+     padding: 10;
+    position: relative;
+    text-align: center;
+       }
+#logo a {
+    color: #000;
+}
+.page-homepage.logo-header #logo-homepage {
+    left: -5000px;
+    opacity: 0;
+}
+#main {
+    box-sizing: border-box;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 60px;
+}
+.page-homepage #main .ajax-holder {
+    overflow: visible;
+}
+#horni-lista .menu {
+    font-family: Danzza,sans-serif;
+    font-size: 14px;
+    left: 60px;
+    line-height: 57px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    z-index: 101;
+}
+#horni-lista .menu li {
+    float: left;
+}
+#horni-lista .menu a {
+    color: #000;
+    display: block;
+    padding: 2px 5px 0;
+    position: relative;
+    transition: background 0.2s ease 0s;
+}
+#horni-lista .menu a::after {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #0099FF 0px, #666699 100%) repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 5px;
+    opacity: 0;
+    position: absolute;
+    right: 5px;
+    transition: opacity 0.2s ease 0s;
+}
+#horni-lista .menu a.open::after, #horni-lista .menu a:hover::after {
+    opacity: 1;
+}
+#horni-lista .popup {
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    right: 100%;
+    top: 60px;
+    visibility: hidden;
+    z-index: 100;
+}
+#horni-lista .popup > * {
+    visibility: visible;
+}
+#horni-lista .popup.open {
+    right: 0;
+}
+#horni-lista .popup.open .box {
+    transition-duration: 0s;
+}
+#horni-lista .popup.open .bg {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+}
+#horni-lista .bg {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    height: 100%;
+    transition: background 0.5s ease 0s;
+}
+@media (min-width: 1000px) {
+.clanky {
+    padding-top: 60px;
+}
+.clanky .list {
+    margin: 0 0 -30px -30px;
+}
+.clanky .list > * {
+    width: 25%;
+}
+.clanky .list + * {
+    margin-top: 30px;
+}
+.clanky .list .inner {
+    margin: 0 0 30px 30px;
+}
+}
+.clanky-promo {
+    margin: 0 0 60px;
+}
+.blog-describe + .clanky-promo {
+    margin-top: -30px;
+}
+.clanky-promo ul {
+    font-size: 0;
+    margin: 0 0 0 -15px;
+}
+.clanky-promo ul > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+    width: 100%;
+}
+.clanky-promo ul p {
+    margin: 0;
+}
+.clanky-promo .inner {
+    background: #000 none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    margin: 0 0 15px 15px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.clanky-promo .content {
+    bottom: 0;
+    left: 0;
+    padding: 30px 20px 20px;
+    position: absolute;
+    right: 0;
+}
+.clanky-promo .title {
+    font-family: Danzza,sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.clanky-promo .size-quarter, .clanky-promo .size-sixth {
+    width: 50%;
+}
+.clanky-promo .size-half {
+    width: 100%;
+}
+.clanky-promo .size-full img, .clanky-promo .size-quarter img, .clanky-promo .size-sixth img {
+    max-height: 270px;
+}
+@media (min-width: 700px) {
+.clanky-promo {
+    margin: 0 0 60px;
+}
+.clanky-promo .size-quarter {
+    width: 25%;
+}
+.clanky-promo .size-sixth {
+    width: 16.6667%;
+}
+.clanky-promo .size-half {
+    width: 50%;
+}
+}
+@media (min-width: 1000px) {
+.clanky-promo ul {
+    margin-left: -30px;
+}
+.clanky-promo .inner {
+    margin: 0 0 30px 30px;
+}
+.clanky-promo .inner:hover .content, .clanky-promo .inner:hover .icon-plus {
+    opacity: 1;
+}
+.ie8 .clanky-promo .inner:hover .content, .ie8 .clanky-promo .inner:hover .icon-plus {
+    display: block;
+}
+.clanky-promo .inner:hover .img {
+    opacity: 0.25;
+}
+.clanky-promo .img {
+    transition: opacity 0.2s ease 0s;
+}
+.clanky-promo .content {
+    opacity: 0;
+    transition: opacity 0.2s ease 0s;
+}
+.ie8 .clanky-promo .content {
+    display: none;
+}
+.clanky-promo .title {
+    font-size: 16px;
+}
+}
+.blog-describe {
+    margin: 0 0 60px;
+    position: relative;
+}
+.blog-describe .scroll {
+    font-size: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    white-space: nowrap;
+    z-index: 1;
+}
+.blog-describe .scroll > * {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top;
+    width: 100%;
+}
+.ie7 .blog-describe .scroll > * {
+    display: inline;
+}
+.blog-describe .scroll > * > * {
+    white-space: normal;
+}
+.js .blog-describe .scroll {
+    overflow-x: hidden;
+}
+.blog-describe .item {
+    background: #000 none no-repeat scroll 50% 50% / cover ;
+    color: #fff;
+    padding-top: 100%;
+    position: relative;
+    text-align: center;
+}
+.blog-describe .item .bg {
+    background: rgba(0, 0, 0, 0) none no-repeat scroll 50% 50% / cover ;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.blog-describe .item.dark {
+    background-color: #fff;
+    color: #000;
+}
+.blog-describe .item.dark .btn > span {
+    color: #000;
+}
+.blog-describe .item.dark .btn:hover > span {
+    color: #fff;
+}
+.blog-describe .content {
+    left: 50px;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.ie8 .blog-describe .content {
+    top: 50px;
+}
+.blog-describe .title {
+    letter-spacing: 0.2em;
+    line-height: 1.1em;
+    margin: 0 0 0.75em;
+}
+.blog-describe .title span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-top: 5px;
+}
+.blog-describe .btn-wrap {
+    margin: 0;
+}
+.blog-describe .btn-wrap .btn {
+    margin: 0 5px 5px;
+}
+.blog-describe .pages {
+    font-size: 12px;
+    font-weight: 600;
+    left: 0;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    z-index: 2;
+}
+.ie8 .blog-describe .pages {
+    top: 50px;
+}
+.blog-describe .pages a {
+    color: #bfbfbf;
+    display: block;
+    transition: font-size 0.2s ease 0s, color 0.2s ease 0s, line-height 0.2s ease 0s;
+}
+.blog-describe .pages a:hover {
+    color: #fff;
+}
+.blog-describe .pages a.active {
+    color: #000;
+    font-size: 16px;
+    line-height: 40px;
+}
+@media (min-width: 480px) {
+.blog-describe .item {
+    padding-top: 57.265%;
+}
+}
+@media (min-width: 700px) {
+.blog-describe .title {
+    font-size: 50px;
+    margin: 0 0 0.25em;
+}
+.blog-describe .title span {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 0;
+}
+.blog-describe .item.pos-x-left .content {
+    padding-right: 50px;
+    right: 50%;
+}
+.blog-describe .item.pos-x-right .content {
+    left: 50%;
+    padding-left: 50px;
+}
+.blog-describe .item.pos-y-top .content {
+    top: 50px;
+    transform: none;
+}
+.blog-describe .item.pos-y-bottom .content {
+    bottom: 50px;
+    top: auto;
+    transform: none;
+}
+}    
+.desribe {
+    display: block;
+    margin-top: -25px;
+    text-align: center;
+}
+.desribe li {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #9c9c9c;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: -0.01em;
+    padding: 0 20px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+.desribe .separator {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #0099FF 0px, #666699 100%) repeat scroll 0 0;
+    height: 2px;
+    padding: 0;
+    width: 30px;
+}
+</style>
 </head>
-<body>
-	<div class="wrapper">
-		<header>
-			<h1><a href="{{ site.baseurl }}{% link index.md %}">{{ site.title }}</a></h1>
-		</header>
-		
-		<section class="content">
-			{{ content }}
-		</section>
-		
-		<nav>
-			{% include menu.md %}
-		</nav>
-	</div>
+
+
+      <div id="header">
+          <div class="bg">
+  
+              
+              
+        </div>
+    
+  
+      <div id="menu-main">
+        <a href="#" class="title" title="Hlavní menu">
+        </a>
+            <div class="menu">            
+              
+            
+          </div>
+        </div>
+      </div>
+
+  <div id = "main">
+   
+        <div class="row-main">
+        <div class="blog-describe">
+          <div class="scroll">
+                <div class="item pos-x-left light">
+                  <div class="content">
+
+                 <h2 class="title">
+                          <strong>Jeden svět</strong>
+                          <span>Tišnov</span>
+                        
+                        </h2>
+
+                       
+                  </div>
+                  
+                </div>
+               
+        </div>
+</div>
+            
+
+
+  <div class="row-main">
+  <ul class="desribe">
+    <li>Obecné informace</li>
+    <li class="separator"></li>
+    <li>Doprovodné akce</li>
+    <li class="separator"></li>
+    <li>Promítací místa</li>
+        <li class="separator"></li>
+    <li>Školní projekce</li>
+  </ul>
+</div>
+
+  <div class="clanky-promo" style="margin-bottom: 0;">
+    <ul class="reset">
+      <li class="size-half">
+        <a href="https://www.jedensvet.cz/2017/" class="inner">
+          <p class="img">
+            <img width="570" height="707" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPDxUQDw8VFRUVDxUPFRUPFRUVFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQGi0dICUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAQQAwgMBEQACEQEDEQH/xAAcAAEBAAMAAwEAAAAAAAAAAAAAAQIGBwMFCAT/xABEEAACAgEBBQUFBQYDBQkAAAABAgADEQQFBhIhMQcTQVFhIjJxgZEUI0JSoTNicoKiscHS8ENTc4OSFRc0NURjo7Kz/8QAGgEBAQADAQEAAAAAAAAAAAAAAAECAwQFBv/EADURAQACAgADBAkDBAIDAQAAAAABAgMRBCExBRJBURMyYYGhsdHh8HGRwRQiUvEVQiQzNCP/2gAMAwEAAhEDEQA/ANI3x3q1G07zbc3sjIrrX3K18h5nzbqfoAVrhEqMcSC8MAEgXhgMQKBAygIFgMwPLfp7KwrPWyh1DoWUgOp5goTyYfCSLRO9T0XTwFpUTigQtAcUBxwKHgZZgQiBMQJmAMDGB5OsouIACAxAhMDEmQIGQgfo0Gm726uoEA2WpUC3QF2CgnHgMyWnu1mfLmsc5btquyXaaZ4W07j9yxgT8mQD9ZxR2ji8dx7mz0VnpNbuNtSnJfQ2kDxq4bfoKyT+k214zDbpaPkxnHaPB6HXaa2jlbU9ZwcC1GQn4BgDOitot6s7/RjMTD6Yo2PSdHXpLqksRKEqKWKGX2VC9D8J8pfPb0k3rOp3Ltisa051vV2Sg5s2a+D1NFzHH/LsPMfBvqJ6PD9qz0zR74/mGq+H/Fy3aGz7tPYar6mrcdVsGD8R5j1HIz2KXreO9Wdw55iY6um9n+4FGq2a9urT2tQc0uPfqRMhXX1Y5PkV4Z4/G8ffHnitP+vX2/nzdGPFE15uf7zbvX7OvNF6+ZRwPYsX8y/4jqPoT6nD8RTPTvV9/sabUms6l6gzewYwHFAvFAvFAkDIGBMwPOFlEJgQtAwLSDHMCgQPNptO9n7NGf8A4alv/rmSbRXrOliJl7GjdzXWe5odSf8AkWgfUria5z4o62j94WKW8nstFuZtVXWxNBblXVxxcC81IYe8w8pqtxWCYmJtCxS3k+jczwJdaGa5lXivpVxwuoYeTAEfQzDcxziRlNemSSSPV7f3f02vq7rVVBh+FhydD5o45ibMGfJht3qTpLVi3V7Cila1VEACqoRQOgAGAB8hNczMzMysPX7x7Bo2hpzRqFyDzVhjjrbHJ0Pgf0I5HlN2DPfDfvVn7sbVi0al8+717s37NvNVwypya7FHsWL5jyI8V6j4YJ+n4fiKZ696vvjycd6TWWzbodmdms0r33sauOs/ZlI5lvw2WD8nkOpBz5Z5OK7RjFeKV5+f0/Vspi3G5aBqdO9btXYpV0YoynqrKcMD8xPSiYmImOjTMaeLEqGIGQEBAnDA8uYGBaBiTAYgZAQPLS5RldcZVg4yMjKkEZHiMjpJMRMakfTu7m0q9XpKtRUAq2VhuEYwrDk6cvJgw+U+XzYpx3ms+DtrO429lMNMlmUIRIhmEyrGaplSY7EkUkCUI0Py7R2bRqkCaipbFDrYBYMgMpyD/rqMjxm3HkvSd1nSTET1fsCzKKptyXtk3RIP/aVC5BwmoVR08Fu/sp/lPmZ7PZ2fUeitP6fRz5a+MOTkT1WhMQLAEQMcQJmBIGSiBnWhZgqglicAKMknyAHMxM65yNx2F2a7R1WGasUIfxag8LY9KxlvricWTj8NOk96fZ9W2MVpb1snsi0aYOqvsuPiqfdJ/Tlv6pwX7TvPqxr4/b4NkYY8W+bK2XRpKhTpqxWgJIVcnmepJJyTOPJe2Se9ady2RGuj9c1sllRDMZlWJM1TKpMZlSQJNhAShATLQuY78wmmFyK6sjqGVlKMp5gqRggjyImcZZjoacds7JL21rolippQwZLGPG/CefAE8WHTJIHQ8+YntR2pT0cTMbt5eH6uacM79j2u+nZ7pNLsmxtLWTbSVva2w5sdV5WAnoF4SW4QAPZ85hw3G3yZ4i08p5aW+OIrycexPZc6wMcQMIGQEDMQN47MN6adBea9RWgS047/AIRx1noA79e6/sTnoTjzu0OFtmrukzuPDwn7/NuxXis83d09P0ngxGnUsSKDLWyTCzLYmZjM6EzMJsukmuZVMzEIFgJQlCZQLLtEmOtqQJGxjfUtiNW4yrKUYHxVhgj6GZ1v3Z3CTD5e2voG0uot079arWq5+IU4VvmMH5z67HkjJSLx4xtwWjU6fjmaJAkCCB+/Y+yr9ZaKdNU1jnnhegH5mY8lHqZryZaY69686hlFZmdQ63ur2UU1Ys2gwufr3SZFI/iPI2foPQzyM/adrcsfKPPx+zfXDEdXSK61VQqqAqgKoUAAAcgAB0AE8yZ3zbmUikmwk2GZJsJmYTKpMZUgICBZUJlAsyRJAk2qSBIEbHHu0/dDVX7S73SaZrBdSrMUAAFieweJjgLlQnU+c97s/i8dcHdyW1qfh+bc2XHM25PV/wDdbrU09l+otqqFdT28AJsY8CluEkYUdMZyZu/5TFN4pWJnc68mPoZ1uWiT0mlIHvdzd2LNp6julcIigPY5I4gueiJ1Zj9B4+APJxnFRw9O9Mbnw+7Zjp35079u9sPT6CkU6avhXqx6s7fmdvxH+3hifLZeIyZrd687/PB2xWKxqHtQYiRlmZ7QjYSbCSZVJhISKkCwEBCLLoJQzLsJjIkKQEBCJIr8O31zo9QPPS2j/wCNpuwf+yv6x82Nukvl8T7F57AQPJp7nrcWVuyspyrISrA+hHMSWiLRqecLDvPZltjXazSmzWIOEHhqt917QORJQDGAeXEMZ58uWT8v2jhw4smsfvjwj88nbita0c25icMS2KJnCLMhYkSYSEipILAQEBKiy7DMbEkCFJAlQiRJFIH5drDOmuHnRYP6DNmL16/rDG3R8tp0Hwn2c9XAxhG59ne5LbRs764FdMje0ehtYf7ND5fmbw6Dn087j+NjBXu19afh7fo3Ysfenc9Hd6qlRQiKFVQFVVGAABgAAdBPmLTMzuXbDyCSJFBmcSjKZbQk2JIpIECyhIEBCEqkBAQEBASBKEI8eoq40ZD0ZChx5EES1tqYk05yOx3Sgf8AjNR9Kv8ALPW/5jJ/hHxaPQR5tM7OdzU2laXutVakb2q1cd7YeuABzVPNvkPMejxvFzhjVY5z4+Efdqx073V3jT6ZKkWupAiIoVVQYCgdABPm7zNpmZ5zLrjkzxNcwyJNBKLAsSJIEBKEgQLAQEIShCkukJNBGgjQQEBCpA+T1OCCOoOQR1B8wfCfbPNdn7Hjr7ke/UamxtOM1VJaePjcY4m4mBYKvTkeufKeF2nOKsxWtYi3WXVh7085dKnkS3pMdqkgolCAmIShAuJkj8W2dp16PT2ai44SteI46nngKPMkkAepmzFhtlvFK9ZSbREblwrb/aDtDVuStzUV/hr054cD96we0x+YHoJ9Jh4DDjjp3p85+jktltL8WzN89o6duJNZa3PPDextU+hD5P0IMzycHgvGprHu5fJIyWjxdo3F3vr2pSTwhLq8C2sHlz6On7pwfgQR5E/P8Zwk8PbziekurHk70NnnGzJRZdhKEBJsSYhCpIJKPmPdvY1mu1Vemr5F29pvyIObufgPqSB4z7DPmjDjm8+HzefWvenT6U2fo69PUlFS8KVoEUegGOfr6z5C+S17Ta3WXfEajT9ExUgJBRKEBIEoCBczKJRo/bIGOyiR0GpqLfw8wP6ik9Psu0Tn17Jac0f2uFT6JypA3XsivddrVqucPVaj46cIQsCf5lT6zz+0oieHnfhMNmH1nep827EkCAkUgICBJAlDMbGg9km7P2TS/arVxbqFDAHqlPVF9C3vH+UeE9LtTifSZPR16V+f26NOGmo232eW3EoQEBAsokxFlCAgfm2loa9TS9Fy5SxCjD0PkfAjrmZ48lsdotXrCTG404PvJ2f67ROeCpr6s+zZQpY48OOtfaU/LHrPpuH7Qw5Y5z3Z8p+rjtitV6PS7F1drcFeluZs4wKn5fE4wvznTbNjrG5tEe9hFZnwdj7M9yW2eG1Gpx39icAVSCKkyCV4h1YkDOOXIAeZ8Hj+MjNqlPVj4y6cWPu85b3PNbiXQSTASaEhSAkCBICTQ+WqNpaiv9nqLVx/u7bF/sZ9rOOk9YifdDzomXT+xrW6vU3XtfqbbK66lQLa7OvHY2QfaPUCs/8AVPG7VpjpWsVrETM+EeEf7dGCZmZ3Lq08V0kBIEosCSBAsBAkBAuYAS7FlQlCUJAkEkUkCBJBIV8oT7h5juXYvoO72c1pHO7UO4/hQCsfqrn5z5ztbJ3s0V8o+fN2YI1Xbfp5jcQEgSgIFgSQICAMBAShIEBKEbFzGwzLvYSBJIkgQJIr5QJwMz7l5j6c3W2f9l0OnoPVNOit/Hwgv/UTPj+Iyeky2t5zL0KRqsQ9pNLIgJAlFgSUWQSAkCAgJQkCUICAgJAgICAkEkV8qaazgdXKhuF1fhPINwkHhPocYn3Fo3Ew82G96vtc2i/7OvT1/BHY/Vmx+k82vZOCOu59/wBm6c9mz9lO9Ws1+o1C6u7jC1I6AIihfaIbHCBnw65nH2lwuLDSs0jXNsw3m0zt0meQ3kCwEoQEgQEgQEBAkosgShAkAIFjQkgRI/LtTaVOlqa7UWBEUc2b9AB1JPgBzMyxYr5bRWkblJtERuXObO2KviPDoXIycE2gEjwJHCcH0yZ68djTrnf4NH9R7HHwZ7zlWB0LsStxtCxfzaNj/wBNlf8Amnl9rR/+MT7f4lvwes7bPnXWQAgWUJAgICQIEgWAgIEgIUhCUICFJJR6rePYNG0KDRqF5Z4lZferbwZD58/gQcGbuH4i+C/ep/tLUi0alya7sn2iGIR6GUMQrF2UkZ5ErwnBI8Mme7Ha2DXOJ/Zy+gs54J6jQsDeext8bVA89LaP1Q/4Tzu1Y/8AH98fy3YPXd2nzTtUHPQ+kISiwEgQEgQJCkIQpCEKQhKEBAQqQhmSVapvD2g6DRZXvO+sHLu9PhiCPBnzwr8Cc+k7sHZ2bLz13Y85arZq1aY3bJdk40FeM8s3NnHr7E9H/h6f5z+33av6ifJy2ew5iB73czbw2drF1LVlwqOvCpAJ4lwOZ6DOJzcXgnPimkTrozpbuzt7PeHtF2hrMqLO4rPLg0xKkj9633j8sD0mrB2fhxc9d6fOfp0ZWy2t7G7diW1+PT3aVjk12d8ufyW+99HBP8887tfFq9ckePL9vt8m7BblMOlzyG8gWBJFICAgICAgJUICAkVICB+PbGrejT2W1Um1kQuK1OC+PAHBmzFWL3itp1E+LG06jcOCbyb867X5D293Uf8AZUZVSP3m6v8AM49J9Pg4HDh6RufOfzk475LWaxOxqM+kCQLiAgIGy9ne1/se0qbCcI5+zWfw2kAH5MEPynJx2H0uC1fHrHu+zZit3bQ+ip8m7yAgICAgJAgJQgICBICQQyhAR7BwntW3a+xavvqlxTflxjotvV09AfeHxPlPpuzeJ9Lj7tutfl4fRxZqancNInotKQJmBcwAgWBcQPoLd/e+g7Jq1uqtCYTurCeptT2WCr1YtjIA8DPls/B3/qJx0jfjH6O6uSO5uXOdtdp+rt1SW6f7umt+Jaif2o5g98R5gnkOQ68yAZ62HszFXHNb85nx8v0/ObRbNMzuHYdgbYq12nTU0n2XHMHqrD3kbHiDPAz4bYbzS3g6q2i0bh7CaWRAQLAkBAQEBLoMRqRI0NB347Qbdnan7MukVvu1tV3sIBDZHuhfAqw6+E9Tg+z658ffm2vDWmjJlms600bXdqG07chXrqH/ALNYyPnYWnpU7M4evWJn9Z+mmmc15ej1e9W0Lf2muvP8NjIPomBOqvC4a9KR+31YTe0+L1V972HNjs583ZmP1Jm6IiOkaY7eKVCBjAQEBmBkDAy4zjGTgEkDPIE4BIHgeQ5+gjQmYG19nu9h2bqMWE/Z7SFtH5T0FoHmPHzHwE4eO4SOIpy9aOn0bcWTuz7H0BW4ZQykEEBgQcgg8wQfKfLTWYnUu7bXN7d9NNsx6kuDM1jZYV4LV18wbCPHngAdTzx0nXw3A5OIi015a+M+TXfLFXvNna+rU1LdRYrowyGU5HqD5EeIPMTmyY7Y7d28alnExMbh+mYKQJILKAmdYjxRq22+0HQ6LUtprxaGUKxZEDIeJQwxhs9D5T0sXA3y0i9NaarZYrOpNL2j7Js/9Vwf8WuxP1K4i3Z+aP8Arv3wkZa+b2ul3l2fbyr12nYnwF1efpnM0W4XJXrWf2ln36+bR+2nZyW6arWVsrGp+6fhYH2LOQPLycAfzGeh2ZbuXmk+P8fZqzRuNuPT2nKsDEmAgSBjAQEBAuYFzAsBA6HuD2hjQ0Pp9UGdEQtRw8yG/wByT4KT0Phz8MY8zjOA9LeL05T4/X86t+PL3Y1LStr7Ut1d76i9su7cR8gOgVfJQMAfCd+PHXHSKV6Q1TMzO5fu3X3n1OzbeOhsqSOOp88Dj1H4Wx+Ic/iOU1cRw2PPXV/dPjC0vNZ5O57qb2abaVeaW4bFAL1P76ev7y/vD9DynzXE8Hk4ef7unhLtpki3RN+9rfY9nX3KcNwd0n8dnsKR8M5+UcFh9LnrWenWfcZLd2sy45sPtC2jpML33fIOXBqfb5ej8n+pPwn0Gbs/Bl8NT5x+aclctqt+2N2taSzA1VT0N4lfva/qo4v6Z5mXsjJX1Ji3wn6fFvrnievJu2zdsabVLxaa+u0ePdsCR8R1HznnZcOTHP8AfEw21tE9HEO1j/ze3+Cr/wDNZ9H2b/8ANX3/ADcmb12n5ne1KTAxCgdAB8BG5RcwpmESAgIGMBAQJAsBmBlAmYFzAZgbim6CarQJqtm2tdZWgGpoYAOr9Sax4jyHPIGQc8pwTxc4800zRqJ9WfD3t3o+9Xdfe1fSauymxbKnZHU5VkOGB/14TttWtomto3DVEzDYt6d+L9o6Wqi5AGrsNjshwLDw8KHg/CRlsjp0nJw3A0wZLXr4/Bsvlm0REtUna1mYGVblWDKSGHRlJDD4EcxJMb5Dza3W23v3l1jWNgLxOSWwowMk9eUlKVpGqxqCZmer88yRIVQYRcwEBAkDHMCQLAkBAQECwEBA27T7sLfsZdXp0ezULqmrsWnLkJnABrGTkeycjwfn6cNuJmnE+jvOq65b8/1bopum46tg2FpxsDSfbNQpOt1CGqjT5OVU4PtqOecgFvLko5kzlzW/rMno6+pXnM/nw/dnWPRxuerne0LLWtd7wwsdjY/GpRiWJJPCQMZM9WndisRXo0TvfN+fMzYmYEgICFIRYEMADAygIEgYwJAQLAkBAQAgUDPIfpA3zdbcXT6rRpqNTqbKmt1LaWtUQEK4JUC3IyCSp6leqjqZ5vE8dfHkmlKxMRG5+35LfTFE13Mte020ddsq+xKbmrZbHqfhw1btWeEnDAq2PPqMzqtjxcRSJtG/H2xthE2pPJu3Z9tdrPte0dUG1WppStFA4e8Wgk8fdoMAeJ5AZwR4zzeOwxHo8NP7Kzv9N+G27Fbe7Tzl7vtJs0mt2OdUhD8L1ml15MHZ1QoQeY5Mcr15ek5uz65MXE+jnl13+35qWeXVqbcYv09lZAsrdMjI7xWXI8xxAZE+hraLdJ245iY6vH/oevPH9wfpMhIQgIFgIAwJAzgIGJgSBIAQECwJAhgIHm01xrdbAASjrYA3QlWDAH05SWjcTCxydL2rvps59LrHqa7vtZWvFQ6/d13KoXvVcDAPJTnOTwDoZ5GPgs8ZMcW13a+PjMeTonJXU+1jt7YOqv0mg2bRUXt4W1+pdz7ll2edlh6ZLWep4ByOIw58dMmXNadR6sR7I8o/YtSZitY/Vq66TVbL2mun0+qQXF0p7ykhk+9ZRw2Ag4wcZUjPIHynbNsfEYJtes666n2eTXqaW1Et03Jvv1W2Ll2mVN9FZKIoCp3iNwGxVXk7BTgMckA+nLzeMrTHwtfQ9J+Xl7G7HMzee837ePZVGs0z06nlWV4i2QCnD7XGGPu4x1nlcPlviyRanX5ui1YtGpcN333jq1diUaVFTTacGukADLeBcnqAcch8zzPL6bg+Gtiib5J3a3Ofo4cl4tyjpDWZ2NSwECwEAYEgZCBcQMYCBjAQEBAQEDGBkIGaNgg4BwQcMMg4OcEeIgb1qt+dbtW+nSB/s1d1tdLjT54jxsFYlzz8TgDHrmebXgsXD1tk13piJnm3zlteYjo6Xs3YOyXR9PRp6s0WCt+FQLUsT3WLj2g3iGzznj5M/ERMXtaef7fT3OmK06Q55tGjbes1/BVa1n2bVWU1agIlSIyqeIs6rnmvIjmCeU9WluExYd2jXeiJmOcueYyWty8HkO9l20bdLsvVAoDf3OsYOubmQkcAKDCqSoyB1JwDjrj/AElMFb58fPluvs/dfSTaYpPvdE0Go0OsW7RCpPuXNNmnsRRgKcK4X8hGCGHn5zyMlc2Ka5d9ecT+eLoia23Vwbaux3rt1JpR3oo1L0GzGQMOwUMfPA/t5ifT480TWnenVpjenDavOddIerm9gQLAQBgSBksDIwIYGMDCAzAuYDMBmAgICBYGddhVgykhlYMpHUEHII9QYmN8pG73dohI79dGiazAB1NLEcYUY+8r4cOD+UnywRgY86Oz433ZtM08p/ifBv8ATeOubZLdvJsCmvTW8WpvvZtXqvbICi3PFwfvE5x0zwsTjInHGCeNtN4/trHKvubO/wCjjXWfFye6xe8LVKa14yyKGJKDOVAbqSOXP0nuRE61PP8Aly75tz0O92v2jbTpc0V3O4rGr4SlyjHP2g2CcAjGPayBjxnnX4PDgra/OYj/AK9Y/Pk3RktaYj4vfHeOmnU07G0Olr1FAsFF5tHGbWLfesPAkc2LEEcj0AzOX+mteluJy2mtusa8PJs9JETFKxto2/ezqdLtG+ijkispC+CcaK5QegLf4eE9Lg8lsmCtrdfu0ZYiLTEPQzqayBRAQJAogZiAMDGB44CBIFgIFgSBYCBcwED2u3Nv361aRqCrGmo1KwXDsCRzsb8R5D9fMzThwUxTbueM7/0yteba29XNzFIGzboby17OS91o4tS6BKLGIK1g+9lf15dcAcus4+K4ac81ibarHWPNtx37m+XNrl9rWMXdizMxZmbmSSckkzriIiNQ1zzYSosCQLAQEDIQrKBjiEeOBICBIFgDAQLAYgIFECiAMCQECwJAogIAQLAQqrAzEDMIIR//2Q==">
+          </p>
+          <div class="content">
+            <p class="title">Seznamte se - tohle je Jeden svět</p>
+          </div>
+          
+        </a>
+      </li>
+      <li class="size-half">
+        <a href="https://www.youtube.com/user/festivaljedensvet" class="inner">
+          <p class="img">
+            <img width="580" height="350" src="data:image/png;base64,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" alt="">
+          </p>
+          <div class="content">
+            <p class="title">Videokanál JS na YouTube</p>
+          </div>
+        
+        </a>
+      </li>
+      <li class="size-half">
+        <a href="https://www.mekstisnov.cz/kino-svratka/program" class="inner">
+          <p class="img">
+            <img width="570" height="340" src="http://d1lfunetf0rx3e.cloudfront.net/production%2F1493588658682-2g40984gg2q-14132c81bb5893047fcfea2864013514" alt="">
+          </p>
+          <div class="content">
+            <p class="title">Kino Svratka</p>
+          </div>
+          
+        </a>
+      </li>
+      <li class="size-half">
+        <a href="https://www.facebook.com/jeden.svet.tisnov/" class="inner">
+          <p class="img">
+            <img width="570" height="340" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEU7WZj///8sT5O3v9RAXJokSpE3VpdacKQzU5Xj5u6Ek7iWosI1VZbq7fRDYJza3+r5+vyrttDQ1+WGmL7L0eH09vpfd6pLZqBrgrFQaaC/xthacaTm6/PDzN9heat5jbemscwMP4yNncAiSJCaqch1h7OAkruxvNRQ5noeAAAEJUlEQVR4nO3dyXLiMBSFYVmAJBLLMwZCBppOwvu/YTNkWDQNit3SvVKdf5ENlZS/soiMLRuRnbNd2xcilYq+7eyHTJx+VrWWRlFv139MGanr6ltY6qR455TR5aewKXLqzfFSXjRnYVmktwPPqaI8Ciud5h48luvqIKwN9XZ4zNSZsDrVMXpMaSs6Sb0VXpOdaFMepIdh2oo+5UF6GKa9SOdQ7XKp+xBCCCGEEEIIIYQQupXKjcmVENPvxPT0glJ5fnjRnF+PtFya9dtuO+lKW2VfVQv7WJZN9/Swr7evu7u3lZ5Sb+mQlJGzflvOF9mtFtbexXfGXsnl3aS6ifvsPjahksW+dObFJ1Sqf3DffREK5XJ/+70XsTAXO3tbFLHQrLuf+2ISypf5EGBEwt0gXzxCuR0IjESoxH4oMBKhGbwHIxHK1+HAKITm5YeHMbEJ882AeT4qoWzGACMQmqETYSxC1Y8aoxEIZ5NxQPZCtR4JZC+UD4kL89WPP/HGJhx+PBqHUE1H70LmQtOOBjIXjjyc4S9U/fhByls49oCNv1CMngyZC0/3JKUt3PxEsrB2fiHW157MuzNvPrl/04WRs79jDBSydvSVq6UyRsV3uXfmNhvaVsZ6LVs6ffZ9XEV745lausz3i57zG+166tnlJOJ9tHvw8MnJ5TRpQ72VY3I6ZnuNd4wehA7n8u060v+ip1wuqJURvwvdJvx93EKHczRx36IsHc4Fr6J+FIKLMO4nBbgIlxCyzkU4TV9IvZGjghBC/kEIIf8ghJB/EELIPwgh5B+EEPJIXcll7azIr/2FY8TAYqP/3dphNc213z+2IT6hau5uG0b2OEtd+ER76SaAsE5eSLzmK4DwnfbilH/hgvjym3/h4yb12aIkvjjlX0i93Ma/kHg6DCAkng4DCHfEazX8C9+SF1IvCvMvpF5Q5F1of6cubKiXvXkXki/s8y4kX1/rXUh+v4x3IfnSRd/CxTP1yUTfwjn1hO9d2JB/g4xv4RM10LtwQj0dehduUxdW9Cv5fQvJp0PfwgX9KnDfQvJd6Fs4p72yFkDI4Hsb85eLt9B/5nCT7LVft+SfnY7EC/fPf/XL4c6uSzfgR3En/qk01mJcC0II+QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPkHIYT8gxBC/kEIIf8ghJB/EELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyL6CQ6IlZwYSF6GkeZBNKqHpB9LilUELTCqLnvIQSyk5Ymi/6CCRU2oqsJhmmgYSmzkRWaYpnSoUR5ro6CLOyIBinQYSqKLOjMGuK8HsxhDAvmuwszEptQu9G/0JldJl9CrOq1jIs0rNQGanrKvsWZpnt2j7kAZxfYdG3nf34K38ArA5OdTHdpNAAAAAASUVORK5CYII=" alt="">
+          </p>
+          <div class="content">
+            <p class="title">Jeden svět Tišnov na Facobooku</p>
+          </div>
+          
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+  
+          
+  
+ 
+<div id="horni-lista"> 
+<ul class="reset menu">
+<li class=""><a href="{{ site.baseurl }}/about">About</a></li> <li class="">
+<a href="{{ site.baseurl }}/default">Hlavní stránka</a></li>
+    <li class=""><a href="Honza.html" class="has-submenu">Honza</a></li> <li class="">
+    <li class=""><a href="Klara.html" class="has-submenu">Klára</a></li> <li class="">
+    </li> 
+    </li>
+      </div>
+    
+<div class="wrapper-footer">
+    <div class="container">
+        <footer class="footer">
+         
+        </footer>
+    </div>
+</div>
+    
+</script>
 </body>
 </html>

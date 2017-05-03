@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: Klara
+permalink: /Klara/
 ---
 
 <!DOCTYPE html>
@@ -11,63 +12,29 @@ layout: default
 <head>
 <meta charset="utf-8" />
 <style type="text/css">
-.sidebar{
-    position: absolute;         
-    right: 0;
-    top: 100px
-    }
-    
-    
-.sidebar div {
-    background: #fff; 
-        width: 350px;
-        height: 600px;
-   margin-right: 50px;
-    margin-top: 70px;
-    }
-    
- .podobne {
-    counter-reset: podobne;
-    margin-bottom: 40px;
+.wrapper-footer {
+    background-color: #FFF;
+    border-top: 0.5px solid #989898;
+    margin-top:20px;
+  
 }
-.podobne-item {
-    color: #000;
-    display: block;
-    font-size: 16px;
-    line-height: 1.3;
-    margin: 20px 0;
-    min-height: 48px;
-    padding-left: 60px;
-    position: relative;
-    text-decoration: none;
-}
-.podobne-item-author {
-    color: #9f9f9f;
-    font-size: 13px;
-}
-.podobne-item::before {
-    border: 1px solid #e3e3e3;
-    border-radius: 100px;
-    color: #dbdbdb;
-    content: counter(podobne, decimal);
-    counter-increment: podobne;
-    font-size: 40px;
-    font-style: normal;
-    opacity: 
-    height: 48px;
-    left: 0;
-    line-height: 46px;
-    position: absolute;
+footer {
+    padding: 5px 10px 5px 10px;
     text-align: center;
-    top: 0;
-    width: 48px;
-}
-.podobne-item:hover::before {
-    background:   linear-gradient(to right, #0099FF 0px, #666699 100%) repeat scroll 0 0;
-    border: none;
-    color: #fff;
-}   
+    font-family: Danzza,sans-serif;
+        font-size: 12px;
+        position: relative;
+}  
     
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    width: 100%;
+    
+    
+}    
     
 svg:not(:root) {
     overflow: hidden;
@@ -102,7 +69,12 @@ h1 {
 h1 {
     font-size: 50px;
 }
- caption, h3 {
+h2 {
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 4px 20px black;
+}
+caption, h3 {
     font-size: 16px;
 }
 h4, h5, h6 {
@@ -137,9 +109,10 @@ ol, ul {
     padding: 0 15px;
 }
 #header .bg {
-    background: #fff none repeat scroll 0 0;
+    background: url('http://d1lfunetf0rx3e.cloudfront.net/production%2F1493585962685-7h5hrdg9mwk-14132c81bb5893047fcfea2864013514');
     border-bottom: 1px solid #dedede;
-    height: 59px;
+    height: 259px;
+    width: 800px;
     overflow: hidden;
     position: relative;
     visibility: visible;
@@ -151,17 +124,7 @@ ol, ul {
     position: relative;
     text-align: center;
 }
-    
-    #logo2 {
-    font:"Source Sans Pro",Arial,Helvetica,sans-serif;
-        font-size: 30px;
-    margin-top: 22px;
-        margin-bottom: 82px;
-    position: relative;
-    text-align: center;
-}
-    
-#horni-listap .menu {
+#horni-lista .menu {
     font-family: Danzza,sans-serif;
     font-size: 14px;
     left: 60px;
@@ -171,17 +134,17 @@ ol, ul {
     top: 0;
     z-index: 101;
 }
-#horni-listap .menu li {
+#horni-lista .menu li {
     float: left;
 }
-#horni-listap .menu a {
+#horni-lista .menu a {
     color: #000;
     display: block;
     padding: 2px 5px 0;
     position: relative;
     transition: background 0.2s ease 0s;
 }
-#horni-listap .menu a::after {
+#horni-lista .menu a::after {
     background: rgba(0, 0, 0, 0) linear-gradient(to right, #0099FF 0px, #666699 100%) repeat scroll 0 0;
     bottom: 0;
     content: "";
@@ -192,10 +155,10 @@ ol, ul {
     right: 5px;
     transition: opacity 0.2s ease 0s;
 }
-#horni-listap .menu a.open::after, #horni-listap .menu a:hover::after {
+#horni-lista .menu a.open::after, #horni-lista .menu a:hover::after {
     opacity: 1;
 }
-#horni-listap .box {
+#horni-lista .box {
     background: #fff none repeat scroll 0 0;
     font-size: 13px;
     left: 0;
@@ -209,28 +172,88 @@ ol, ul {
     top: 0;
     transition: opacity 0.5s ease 0s;
 }
-.ie8 #horni-listap .box {
+.ie8 #horni-lista .box {
     display: none;
 }
-#horni-listap .box.open {
+#horni-lista .box.open {
     opacity: 1;
     z-index: 10;
 }
-.ie8 #horni-listap .box.open {
+.ie8 #horni-lista .box.open {
     display: block;
 }
 .textonas {
-   background: #fff none repeat scroll 0 0;
-    width:58%;
-    float: left;
+    background: #fff none repeat scroll 0 0;
+    width: 45%;
+    float: right;
    font-style: monospace,serif;
-   margin-top: 40px;
-    margin-bottom: 20px ;
-    text-align: justify;
-  
+   margin-top: 60px ;
     
   } 
-    
-    
 </style>
 </head>
+
+</head>
+
+  <div class="static-page-loader"></div>
+
+ 
+      <div id="header">
+          <div class="bg">
+  
+              
+              
+        </div>
+     
+            
+          </div>
+        </div>
+      </div>
+
+  <div id = "main">
+      
+         
+        <div class="row-main">
+        <div class="box-carousel">
+                      
+
+                 
+            <div class="textonas">
+                <h3> Klára Weiss </h3> 
+                <p> Milovnice matematiky a zvláště matic :-). Klára bude mít na starost především technickou stránku věci (kód a layout), protože je v tom dobrá a navíc má z NAMI neustále plný počet bodů.
+                
+                </p>
+            
+                </div>
+						
+
+				
+					
+
+                </div> 	       
+               
+                </div>
+
+
+  <div id="horni-lista"> 
+<ul class="reset menu">
+<li class=""><a href="{{ site.baseurl }}/about">About</a></li> <li class="">
+<a href="{{ site.baseurl }}/default">Hlavní stránka</a></li>
+    <li class=""><a href="{{ site.baseurl }}/Honza">Honza</a></li> <li class="">
+    <li class=""><a href="{{ site.baseurl }}/Klara">Klára</a></li> <li class="">         
+        </div>
+  
+  
+    </div>
+
+<div class="wrapper-footer">
+    <div class="container">
+        <footer class="footer">
+         
+        </footer>
+    </div>
+</div>
+		      
+
+</body>
+</html>
