@@ -1,24 +1,108 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>{{ site.title }}</title>
-	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css">
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+          <div id="header">
+          <div class="bg">
+  
+              <h1 id="logo">
+                Jeden svět Tišnov
+            </h1>
+              
+        </div>
+    
+  
+      <div id="menu-main">
+        <a href="#" class="title" title="Hlavní menu">
+        </a>
+            <div class="menu">            
+              
+            
+          </div>
+        </div>
+      </div>
+
+  <div id = "main">
+   
+        <div class="row-main">
+        <div class="blog-describe">
+          <div class="scroll">
+                <div class="item pos-x-left light">
+                  <div class="content">
+
+                 
+                       
+                  </div>
+<div class="bg" style="background-image: url('http://d1lfunetf0rx3e.cloudfront.net/production%2F1493585962685-7h5hrdg9mwk-14132c81bb5893047fcfea2864013514');"></div>                </div>
+               
+        </div>
+</div>
+            
+
+
+  <div class="row-main">
+	<ul class="desribe">
+		<li>Festival Jeden svět</li>
+		
+		<li>Program</li>
+		
+		<li>Historie</li>
+        
+		<li>Promítací místa</li>
+		
+		<li>Doprovodné akce</li>
+		<li>Školní akce</li>
+		<li>Fotogalerie</li>
+		<li>Partneři akce</li>
+	</ul>
+</div>
+
 	
-</head>
-<body>
-	<div class="wrapper">
-		<header>
-			<h1><a href="{{ site.baseurl }}{% link index.md %}">{{ site.title }}</a></h1>
-		</header>
 		
-		<section class="content">
-			{{ content }}
-		</section>
-		
-		<nav>
-			{% include menu.md %}
-		</nav>
+			
+	
+		</ul>
 	</div>
-</body>
+</div>
+
+  
+</div>
+
+          
+  
+ 
+
+
+
+<div id="horni-listap"> 
+<ul class="reset menu">
+<li class=""><a href="{{ site.baseurl }}/about">About</a></li> <li class="">
+<a href="{{ site.baseurl }}/default">Hlavní stránka</a></li>
+    <li class=""><a href="{{ site.baseurl }}/Honza">Honza</a></li> <li class="">
+    <li class=""><a href="{{ site.baseurl }}/Klara">Klára</a></li> <li class="">         
+        </div>
+    
+<div class="wrapper-footer">
+    <div class="container">
+        <footer class="footer">
+         
+        </footer>
+    </div>
+</div>
+		
+  </body>
 </html>
