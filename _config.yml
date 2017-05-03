@@ -30,3 +30,15 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - mock/*
+
+permalink: /:title/
+permalink: /:Klara/
+permalink: /:Honza/
+permalink: /:default/
+permalink: /:about/
+permalink: /:seznamtese/
+permalink: /:vyhodynevyhody/
+permalink: /:tematickavidea/
+permalink: /:xbox/
+permalink: /:seznamtese/
+permalink: /:dopady/
