@@ -1,1 +1,0 @@
-Zkouska. Snad to vyjde. Prosiiiiiiim
