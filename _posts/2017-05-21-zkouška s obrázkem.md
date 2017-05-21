@@ -2,5 +2,5 @@
 layout: post
 title: zkouška s obrázkem
 ---
-![Československý vlčák](learn-jekyll/images/Svratka.jpg)
+![Svratka](https://hondza.github.io/learn-jekyll/images/Svratka.jpg)
 
