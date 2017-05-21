@@ -30,3 +30,19 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - mock/*
+
+google_analytics: UA-98477017-1
+baseurl: ""
+
+permalink: /:title/
+permalink: /:Klara/
+permalink: /:Honza/
+permalink: /:Lukas/
+permalink: /:default/
+permalink: /:about/
+permalink: /:seznamtese/
+permalink: /:vyhodynevyhody/
+permalink: /:tematickavidea/
+permalink: /:xbox/
+permalink: /:seznamtese/
+permalink: /:dopady/
