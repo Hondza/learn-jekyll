@@ -71,21 +71,25 @@ https://www.facebook.com/jedensvet/?fref=ts
          
 
  Festival Jeden svět
-                     <
+                     
+
  Program
           
           
 Historie
           
+
  Promítací místa
           
           
 Doprovodné akce 
+
           
  Školní projekce
-                     < 
+                     
           
 Fotogalerie  
+
           
 Partneři festivalu
                     
