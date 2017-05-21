@@ -22,19 +22,18 @@ Jeden svět Tišnov
 
 # Webové zdroje
                 
-https://www.jedensvet.cz/2017/
+[Jeden svět](https://www.jedensvet.cz/2017/)
           
 
-https://www.jsns.cz/
+[Jeden svět na školách](https://www.jsns.cz/)
          
-
-https://www.promitejity.cz/
+[Promítej i ty](https://www.promitejity.cz/)
       
           
-http://www.dokument-festival.cz/
+[Mezinárodní festival dokumentárních filmů](http://www.dokument-festival.cz/)
           
 
-http://www.afo.cz/
+[Academia film Olomouc](http://www.afo.cz/)
         
   
 # Newebové zdroje                 
@@ -42,16 +41,16 @@ http://www.afo.cz/
 
   Dějiny, film a lidská práva. [Praha: Člověk v tísni, 2010?]. 
           
-  Člověk v tísni - výroční zpráva [online]. , 102 [cit. 2017-04-16]. Dostupné z: https://www.clovekvtisni.cz/uploads/file/1470749123-CVT_VZ2015_navigace_lg_fin.pdf
+  Člověk v tísni - výroční zpráva [online]. , 102 [cit. 2017-04-16]. Dostupné z: [https://www.clovekvtisni.cz/uploads/file/1470749123-CVT_VZ2015_navigace_lg_fin.pdf](https://www.clovekvtisni.cz/uploads/file/1470749123-CVT_VZ2015_navigace_lg_fin.pdf)
 
                   
   ATTILA, Jozef. Jeden svět. Praha: Argo, 1999. ISBN 80-720-3204-6.
       
           
-  JANOVSKÁ, Ludmila. Jeden svět na školách: projekt společnosti Člověk v tísni : vzdělávání prostřednictvím dokumentárních filmů. Praha: Člověk v tísni - společnost při ČT, 2005. ISBN 80-869-6108-7.</li>
+  JANOVSKÁ, Ludmila. Jeden svět na školách: projekt společnosti Člověk v tísni : vzdělávání prostřednictvím dokumentárních filmů. Praha: Člověk v tísni - společnost při ČT, 2005. ISBN 80-869-6108-7.
 
              
-  JANOVSKÁ, Ludmila. Příběhy bezpráví: projekt společnosti Člověk v tísni : .. ročník .. Praha: Člověk v tísni - společnost při ČT, 2006. ISBN 80-869-6107-9.</li>
+  JANOVSKÁ, Ludmila. Příběhy bezpráví: projekt společnosti Člověk v tísni : .. ročník .. Praha: Člověk v tísni - společnost při ČT, 2006. ISBN 80-869-6107-9.
 
                 
 # Videa a obrázky (odkazy) 
@@ -60,10 +59,10 @@ http://www.afo.cz/
              
 Vzhledem k tomu, že jsem jeden z organizátorů festivalu, tak fotografie jsou většinou v mém vlastnictví nebo ve vlastnictví dalších organizátorů.
 
-https://www.facebook.com/jeden.svet.tisnov/
+[Facebook Jeden svět Tišnov](https://www.facebook.com/jeden.svet.tisnov/)
           
   
-https://www.facebook.com/jedensvet/?fref=ts
+[Facebook Jeden svět](https://www.facebook.com/jedensvet/?fref=ts)
           
 
 # Základní obsah k tématu 
@@ -76,22 +75,22 @@ https://www.facebook.com/jedensvet/?fref=ts
  Program
           
           
-Historie
+ Historie
           
 
  Promítací místa
           
           
-Doprovodné akce 
+ Doprovodné akce 
 
           
  Školní projekce
                      
           
-Fotogalerie  
+ Fotogalerie  
 
           
-Partneři festivalu
+ Partneři festivalu
                     
           
  Kontakt   
