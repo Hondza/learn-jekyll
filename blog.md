@@ -96,7 +96,7 @@ Vzhledem k tomu, že jsem jeden z organizátorů festivalu, tak fotografie jsou 
  Kontakt   
           
 
-# Strategii zveřejňování obsahu 
+# Strategie zveřejňování obsahu 
 
  Cílem je mít stabilní základní strukturu webu s všeobecnými informace včetně historie, fotogalerie, kontaktů atd. a mít možnost vždy v rámci konání nového ročníku web aktualizovat, aby web sloužil jako zdroj pro nový ročník a zároveň během celého roku přinesl info o celém festivalu. 
     
