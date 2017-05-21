@@ -37,6 +37,7 @@ baseurl: ""
 permalink: /:title/
 permalink: /:Klara/
 permalink: /:Honza/
+permalink: /:Lukas/
 permalink: /:default/
 permalink: /:about/
 permalink: /:seznamtese/
