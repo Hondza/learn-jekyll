@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <!--[if IE 7 ]>    <html lang="cs" class="ie7 no-js"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="cs" class="ie8 no-js"> <![endif]-->
@@ -104,10 +107,9 @@ ol, ul {
     padding: 0 15px;
 }
 #header .bg {
-    background: url('http://d1lfunetf0rx3e.cloudfront.net/production%2F1493585962685-7h5hrdg9mwk-14132c81bb5893047fcfea2864013514');
+    background: #fff none repeat scroll 0 0;
     border-bottom: 1px solid #dedede;
-    height: 259px;
-    width: 800px;
+    height: 59px;
     overflow: hidden;
     position: relative;
     visibility: visible;
@@ -119,7 +121,7 @@ ol, ul {
     position: relative;
     text-align: center;
 }
-#horni-lista .menu {
+#horni-listap .menu {
     font-family: Danzza,sans-serif;
     font-size: 14px;
     left: 60px;
@@ -129,17 +131,17 @@ ol, ul {
     top: 0;
     z-index: 101;
 }
-#horni-lista .menu li {
+#horni-listap .menu li {
     float: left;
 }
-#horni-lista .menu a {
+#horni-listap .menu a {
     color: #000;
     display: block;
     padding: 2px 5px 0;
     position: relative;
     transition: background 0.2s ease 0s;
 }
-#horni-lista .menu a::after {
+#horni-listap .menu a::after {
     background: rgba(0, 0, 0, 0) linear-gradient(to right, #0099FF 0px, #666699 100%) repeat scroll 0 0;
     bottom: 0;
     content: "";
@@ -150,10 +152,10 @@ ol, ul {
     right: 5px;
     transition: opacity 0.2s ease 0s;
 }
-#horni-lista .menu a.open::after, #horni-lista .menu a:hover::after {
+#horni-listap .menu a.open::after, #horni-listap .menu a:hover::after {
     opacity: 1;
 }
-#horni-lista .box {
+#horni-listap .box {
     background: #fff none repeat scroll 0 0;
     font-size: 13px;
     left: 0;
@@ -167,14 +169,14 @@ ol, ul {
     top: 0;
     transition: opacity 0.5s ease 0s;
 }
-.ie8 #horni-lista .box {
+.ie8 #horni-listap .box {
     display: none;
 }
-#horni-lista .box.open {
+#horni-listap .box.open {
     opacity: 1;
     z-index: 10;
 }
-.ie8 #horni-lista .box.open {
+.ie8 #horni-listap .box.open {
     display: block;
 }
 .textonas {
@@ -188,7 +190,6 @@ ol, ul {
 </style>
 </head>
 
-</head>
 
   <div class="static-page-loader"></div>
 
@@ -196,7 +197,10 @@ ol, ul {
       <div id="header">
           <div class="bg">
   
-                           
+              <h1 id="logo">
+                Virtuální realita
+            </h1>
+              
         </div>
      
             
@@ -213,38 +217,62 @@ ol, ul {
 
                  
             <div class="textonas">
-                <h3> Lukáš </h3> 
-                <p> Zkouška nového odkazu
+                <h3> Lukáš Konečný </h3> 
+                <p>Ahoj jmenuji se Lukáš, no můžete mi říkat Lakin. Jsem 22 letý student na
+                        Masarykově univerzitě v oboru Informační společnost a knihovnictví. Mezi mé
+                        hlavní koníčky patří hlavně hraní her, jak už počítačových tak i stolních,
+                        dále četba sci-fi a fantasy a v neposlední řadě pak sledování seriálů jako
+                        je například Game of thrones.
+                  <p>  Jakožto hráč počítačových her jsem si toto téma nevybral náhodou, sám jsem
+                    zvědav kam technologie virtuální reality posunou herní průmysl. Avšak v
+                    mnoha ohledech s jejím používáním se stavím dost skepticky a proto bych rád
+                    přinesl i poněkud jiný hráčský pohled na věc. </p>
+
+                  
+                
+                <h3> Mám rád: </h3> Polární vlky, hudbu, vaření, provokaci :P
+                
+                <h3> Hry, které hraji/hrál jsem: </h3>  The division, Darkest Dungeon, Binding of Isaac
+
+
+            
+                <h3> Nemám rád:</h3> Na to musíte přijít sami ;)
+               
                 
                 </p>   
             
-                </div>					
+                </div>
+                        
 
-                </div> 	       
+                <p class="img">
+                        <img src="http://oi64.tinypic.com/egedn6.jpg" border="0" alt="I"></a>
+                </p>
+                    
+
+                </div>         
                
                 </div>
 
 
-  <div id="horni-lista"> 
+  <div id="horni-listap"> 
 <ul class="reset menu">
 <li class=""><a href="{{ site.baseurl }}/about">About</a></li> <li class="">
-<a href="{{ site.baseurl }}/default">Hlavní stránka</a></li>
+<a href="{{ site.baseurl }}/default">Blog</a></li>
     <li class=""><a href="{{ site.baseurl }}/Honza">Honza</a></li> <li class="">
-    <li class=""><a href="{{ site.baseurl }}/Klara">Klára</a></li> <li class=""> 
-    <li class=""><a href="{{ site.baseurl }}/KLukas">Lukáš</a></li> <li class="">         
-        </div>
-  
-  
+    <li class=""><a href="{{ site.baseurl }}/Klara">Klára</a></li> <li class="">
+    <li class=""><a href="{{ site.baseurl }}/Lukas">Lukáš</a></li> <li class="">
     </div>
 
 <div class="wrapper-footer">
     <div class="container">
         <footer class="footer">
-         
+         <h1 id="logo">
+
+         © 2016 </h1>
         </footer>
     </div>
 </div>
-		      
-
 </body>
 </html>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
